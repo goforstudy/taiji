@@ -1,5 +1,7 @@
 let demo = document.querySelector("#demo");
-let style = document.querySelector("#style");
+let style = document.createElement('style');
+style.id = "style";
+document.head.append(style)
 let string = `
 /** 你好，我是一名前端开发人员！
 *   接下来我要展示一些东西了
